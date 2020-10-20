@@ -15,4 +15,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->middleware('auth');
+
+Route::get('/home', function () {
+    dd(\Illuminate\Support\Facades\Auth::user());
+})->middleware(['auth', 'verified']);
