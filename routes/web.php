@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Admin;
+use App\Http\Controllers\Site;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,9 +16,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-})->middleware('auth');
+    return view('site.home');
+});
 
-Route::get('/home', function () {
-    dd(\Illuminate\Support\Facades\Auth::user());
-})->middleware(['auth', 'verified']);
+Route::prefix('admin')->group(function(){
+    Route::get('/', [Admin\HomeController::class, 'index']);
+});
+
+//Route::get('/home', function () {
+//    dd(\Illuminate\Support\Facades\Auth::user());
+//})->middleware(['auth', 'verified']);
