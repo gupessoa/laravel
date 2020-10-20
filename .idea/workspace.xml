@@ -138,11 +138,16 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/js" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.debug" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\www\arte.dev\resources\js" />
+      <recent name="C:\www\arte.dev\resources\scss" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\www\arte.dev\app\Http\Controllers\Admin" />
       <recent name="C:\www\arte.dev\app\Http\Controllers\Site" />
@@ -163,7 +168,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603216102789</updated>
-      <workItem from="1603216105357" duration="15035000" />
+      <workItem from="1603216105357" duration="17485000" />
     </task>
     <servers />
   </component>
