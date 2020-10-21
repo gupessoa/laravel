@@ -138,17 +138,20 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/auth" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.debug" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\www\arte.dev\resources\views\auth" />
+      <recent name="C:\www\arte.dev\resources\views\site" />
       <recent name="C:\www\arte.dev\resources\js" />
       <recent name="C:\www\arte.dev\resources\scss" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\www\arte.dev\resources\views\admin" />
       <recent name="C:\www\arte.dev\app\Http\Controllers\Admin" />
       <recent name="C:\www\arte.dev\app\Http\Controllers\Site" />
       <recent name="C:\www\arte.dev\resources\views" />
@@ -168,7 +171,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603216102789</updated>
-      <workItem from="1603216105357" duration="17485000" />
+      <workItem from="1603216105357" duration="26334000" />
     </task>
     <servers />
   </component>
@@ -185,5 +188,16 @@
     </state>
     <state x="604" y="335" key="NewPhpFileDialog/0.0.1536.824/1920.0.1366.728@0.0.1536.824" timestamp="1603227081196" />
     <state x="2457" y="296" key="NewPhpFileDialog/0.0.1536.824/1920.0.1366.728@1920.0.1366.728" timestamp="1603232512484" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Providers/AuthServiceProvider.php</url>
+          <line>4</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

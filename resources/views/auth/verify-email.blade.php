@@ -1,4 +1,4 @@
-@extends('template')
+@extends('auth.template')
 
 @section('content')
     <div class="container">
@@ -17,9 +17,11 @@
                                 {{ session('status') }}
                             </div>
                         @endif
-                        <form class="form-signin" method="POST" action="{{ route('verification.send') }}">
-                            @csrf
-                            <button class="btn btn-lg btn-primary btn-block text-uppercase mt-5" type="submit">Resend Email</button>
+                        <form class="form" method="POST" action="{{ route('verification.send') }}">
+                        @csrf
+                            <div class="card-footer justify-content-center flex-column">
+                                <button class="btn btn-lg btn-primary btn-block text-uppercase mt-5" type="submit">Resend E-mail</button>
+                            </div>
                         </form>
                     </div>
                 </div>

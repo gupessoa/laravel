@@ -1,4 +1,4 @@
-@extends('template')
+@extends('auth.template')
 
 @section('content')
     <div class="container">
@@ -17,28 +17,37 @@
                                 {{ session('status') }}
                             </div>
                         @endif
-                        <form class="form-signin" method="POST" action="{{ route('login') }}">
+                        <form class="form" method="POST" action="{{ route('login') }}">
                             @csrf
-                            <div class="form-label-group">
-                                <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Email address" required>
-                                <label for="inputEmail">Email address</label>
-                                @error('email')
-                                <span class="invalid-feedback is-invalid" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
+                            <div class="bmd-form-group">
+                                <div class="input-group mb-3 mt-4">
+                                    <div class="input-group-prepend">
+                                        <p class="input-group-text">
+                                            <i class="material-icons">email</i>
+                                        </p>
+                                    </div>
+                                    <input type="email" name="email" id="" class="form-control" placeholder="E-mail" spellcheck="false" data-ms-editor="true">
+                                    @error('email')
+                                        <span class="invalid-feedback is-invalid" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
+                                </div>
                             </div>
-                            <div class="form-label-group">
-                                <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password" required>
-                                <label for="inputPassword">Password</label>
-                                @error('password')
-                                <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
+                            <div class="bmd-form-group">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <p class="input-group-text">
+                                            <i class="material-icons">lock_outline</i>
+                                        </p>
+                                    </div>
+                                    <input type="password" name="password" id="" class="form-control" placeholder="E-mail" spellcheck="false" data-ms-editor="true">
+                                </div>
                             </div>
-                            <button class="btn btn-lg btn-primary btn-block text-uppercase mt-5" type="submit">LogIn</button>
-                            <a class="d-block mt-2 small mb-5" href="{{ route('password.request') }}">Forgot Password</a>
+                            <div class="card-footer justify-content-center flex-column">
+                                <button class="btn btn-lg btn-primary btn-block text-uppercase mt-5" type="submit">LogIn</button>
+                                <a class="d-block mt-2 small mb-5" href="{{ route('password.request') }}">Forgot Password</a>
+                            </div>
                         </form>
                     </div>
                 </div>

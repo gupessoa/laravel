@@ -19581,11 +19581,6 @@ Copyright (c) 2015 Daniel Eden
   }
 }
 
-:root {
-  --input-padding-x: 1.5rem;
-  --input-padding-y: .75rem;
-}
-
 .card-signin {
   border: 0;
   border-radius: 1rem;

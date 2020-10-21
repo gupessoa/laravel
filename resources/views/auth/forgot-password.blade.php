@@ -1,4 +1,4 @@
-@extends('template')
+@extends('auth.template')
 
 @section('content')
     <div class="container">
@@ -19,16 +19,24 @@
                         @endif
                         <form class="form-signin" method="POST" action="{{ route('password.request') }}">
                             @csrf
-                            <div class="form-label-group">
-                                <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Email address" required>
-                                <label for="inputEmail">Email address</label>
-                                @error('email')
-                                <span class="invalid-feedback is-invalid" role="alert">
+                            <div class="bmd-form-group">
+                                <div class="input-group mb-3 mt-4">
+                                    <div class="input-group-prepend">
+                                        <p class="input-group-text">
+                                            <i class="material-icons">email</i>
+                                        </p>
+                                    </div>
+                                    <input type="email" name="email" id="" class="form-control" placeholder="E-mail" spellcheck="false" data-ms-editor="true">
+                                    @error('email')
+                                    <span class="invalid-feedback is-invalid" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
-                                @enderror
+                                    @enderror
+                                </div>
                             </div>
-                            <button class="btn btn-lg btn-primary btn-block text-uppercase mt-5" type="submit">Reset</button>
+                            <div class="card-footer justify-content-center flex-column">
+                                <button class="btn btn-lg btn-primary btn-block text-uppercase mt-5" type="submit">Reset</button>
+                            </div>
                         </form>
                     </div>
                 </div>
